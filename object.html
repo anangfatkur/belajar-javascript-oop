@@ -11,15 +11,20 @@
         //membuat constructor function
         this.firstName = "";
         this.lastName = "";
+        this.sayHello = function (name) {
+          console.info(`Hello ${name}, my name is ${this.firstName}`);
+        };
       }
 
       const anang = new Person();
       anang.firstName = "Anang";
       anang.lastName = "Fatkurrohman";
+      anang.sayHello("Bruno");
 
       const amad = new Person();
       amad.firstName = "Amad";
       amad.lastName = "Diallo";
+      amad.sayHello("Mbuemo");
 
       console.log(anang);
       console.log(amad);
