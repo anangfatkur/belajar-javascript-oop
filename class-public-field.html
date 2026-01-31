@@ -11,11 +11,14 @@
         firstName;
         lastName;
         balance = 0;
-        constructor() {}
+        constructor(firstName, lastName) {
+          this.firstName = firstName;
+          this.lastName = lastName;
+        }
         sayHello() {}
       }
 
-      const anang = new Customer();
+      const anang = new Customer("Anang", "Fatkurrohman");
       console.info(anang);
     </script>
   </body>
