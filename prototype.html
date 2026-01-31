@@ -15,11 +15,22 @@
         };
       }
 
+      Person.prototype.sayBye = function () {
+        console.info("Good Bye");
+      };
+
+      Person.prototype.run = function () {
+        console.info(`${this.firstName} is running`);
+      };
+
       const anang = new Person("Anang", "Fatkurrohman");
       const amad = new Person("Amad", "Diallo");
 
       console.log(anang);
       console.log(amad);
+
+      anang.sayBye();
+      anang.run();
     </script>
   </body>
 </html>
