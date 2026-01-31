@@ -7,14 +7,22 @@
   </head>
   <body>
     <script>
-
-      function Person() {     //membuat constructor function
-
+      function Person() {
+        //membuat constructor function
+        this.firstName = "";
+        this.lastName = "";
       }
 
       const anang = new Person();
+      anang.firstName = "Anang";
+      anang.lastName = "Fatkurrohman";
+
       const amad = new Person();
-      
+      amad.firstName = "Amad";
+      amad.lastName = "Diallo";
+
+      console.log(anang);
+      console.log(amad);
     </script>
   </body>
 </html>
