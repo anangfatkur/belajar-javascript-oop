@@ -31,6 +31,16 @@
           }
         }
       }
+
+      class Counter {
+        constructor(value, max) {
+          this.value = value;
+          this.max = max;
+        }
+        [Symbol.iterator]() {
+          return new CounterIterator(this.value, this.max);
+        }
+      }
     </script>
   </body>
 </html>
