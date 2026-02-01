@@ -29,6 +29,25 @@
         console.info("Program Selesai");
       }
       console.info("Fatkurrohman");
+
+      class Counter {
+        #counter = 1;
+
+        next() {
+          try {
+            return this.#counter;
+          } finally {
+            this.#counter++;
+          }
+        }
+      }
+
+      const counter = new Counter();
+      console.info(counter.next());
+      console.info(counter.next());
+      console.info(counter.next());
+      console.info(counter.next());
+      console.info(counter.next());
     </script>
   </body>
 </html>
