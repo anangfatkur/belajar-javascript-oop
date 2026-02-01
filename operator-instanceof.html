@@ -9,7 +9,7 @@
     <script>
       class Employee {}
 
-      class Manager {}
+      class Manager extends Employee {}
 
       const amad = new Employee();
       const anang = new Manager();
@@ -17,11 +17,11 @@
       console.info(typeof amad);
       console.info(typeof anang);
 
-      console.info(amad instanceof Employee);
-      console.info(amad instanceof Manager);
+      console.info(amad instanceof Employee); // true
+      console.info(amad instanceof Manager); //false
 
-      console.info(anang instanceof Employee);
-      console.info(anang instanceof Manager);
+      console.info(anang instanceof Employee); //true
+      console.info(anang instanceof Manager); //true
     </script>
   </body>
 </html>
