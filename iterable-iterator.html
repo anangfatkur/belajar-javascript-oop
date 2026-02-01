@@ -13,6 +13,24 @@
           this.done = done;
         }
       }
+
+      class CounterIterator {
+        constructor(value, max) {
+          this.value = value;
+          this.max = max;
+        }
+        next() {
+          try {
+            if (this.value > this.max) {
+              return new CounterIteratorResult(this.value, true);
+            } else {
+              return new CounterIteratorResult(this.value, false);
+            }
+          } finally {
+            this.value++;
+          }
+        }
+      }
     </script>
   </body>
 </html>
