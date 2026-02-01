@@ -7,6 +7,10 @@
   </head>
   <body>
     <script>
+      //  <!--Note: Cara Kerja Iterable dan Iterator:
+      // jika mengikuti kontrak Iterable, makan object yang kita akan bisa dilakukan iterasi menggunakan for...of
+      // Setiap kita melakukan perulangan, object Iterator akan dibuat
+      // Hal ini menjadi jika kita melakukan iterasi berulang-ulang, karena Iterator baru akan dibuat terus menerus
       class CounterIteratorResult {
         constructor(value, done) {
           this.value = value;
